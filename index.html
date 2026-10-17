@@ -274,13 +274,14 @@
                     <div class="w-14 h-14 rounded-2xl bg-emerald-500/10 border border-emerald-500/20 text-emerald-400 flex items-center justify-center mb-6">
                         <i data-lucide="gauge" class="w-7 h-7"></i>
                     </div>
-                    <h3 class="text-xl font-bold text-white mb-3">Controle de Abastecimento & Médias</h3>
+                    <h3 class="text-xl font-bold text-white mb-3">Controle de Abastecimento & Médias (km/L)</h3>
                     <p class="text-gray-400 text-sm leading-relaxed mb-4">
-                        Registre odômetro atual, litros, valor pago por litro e tipo de combustível (Gasolina, Etanol, Diesel, GNV). O sistema calcula instantaneamente o consumo médio em km/L.
+                        Monitore cada centavo e cada quilômetro! Registre pelo hodômetro parcial (trip) ou pelo odômetro total. O sistema calcula na hora o consumo exato em km/L e inclui uma Calculadora Flex inteligente (Álcool vs Gasolina pela regra dos 70%).
                     </p>
                     <ul class="text-xs text-gray-300 space-y-2">
-                        <li class="flex items-center gap-2"><i data-lucide="check" class="w-3.5 h-3.5 text-emerald-400"></i> Comparativo de rendimento entre postos</li>
-                        <li class="flex items-center gap-2"><i data-lucide="check" class="w-3.5 h-3.5 text-emerald-400"></i> Custo exato por quilômetro rodado</li>
+                        <li class="flex items-center gap-2"><i data-lucide="check" class="w-3.5 h-3.5 text-emerald-400"></i> Cálculo exato por hodômetro parcial ou odômetro total</li>
+                        <li class="flex items-center gap-2"><i data-lucide="check" class="w-3.5 h-3.5 text-emerald-400"></i> Calculadora Flex com indicação imediata de economia</li>
+                        <li class="flex items-center gap-2"><i data-lucide="check" class="w-3.5 h-3.5 text-emerald-400"></i> Histórico detalhado por posto e tipo de combustível</li>
                     </ul>
                 </div>
 
@@ -866,6 +867,16 @@
 
             <div class="space-y-4">
                 
+                <details class="glass-card rounded-2xl p-5 border border-gray-800 cursor-pointer group">
+                    <summary class="font-bold text-white text-sm sm:text-base flex items-center justify-between list-none">
+                        <span>Como o aplicativo calcula o consumo em km/L e a Calculadora Flex?</span>
+                        <i data-lucide="chevron-down" class="w-4 h-4 text-gray-400 group-open:rotate-180 transition-transform"></i>
+                    </summary>
+                    <p class="text-gray-400 text-xs sm:text-sm mt-3 leading-relaxed">
+                        É simples, transparente e sem complicação! Você pode registrar seu abastecimento informando os <b>KM rodados</b> pelo hodômetro parcial (trip) que você zerou no painel, ou pelo odômetro total. O aplicativo faz a divisão matemática exata dos quilômetros percorridos pelos litros colocados e calcula sua média de consumo na hora. Além disso, a Calculadora Flex analisa os preços do Etanol e da Gasolina e te avisa imediatamente qual combustível compensa mais para o seu bolso usando a regra dos 70%!
+                    </p>
+                </details>
+
                 <details class="glass-card rounded-2xl p-5 border border-gray-800 cursor-pointer group">
                     <summary class="font-bold text-white text-sm sm:text-base flex items-center justify-between list-none">
                         <span>Preciso pagar mensalidade ou anuidade?</span>
